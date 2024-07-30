@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "cft-tracker",
+  "version": "1.0",
+
+  "description": "tracks the time for each question in codeforces",
+
+  "icons": {
+    "48": "icon/time.png" 
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://codeforces.com/problemset/problem/*"],
+      "js": ["cf.js"]
+    }
+  ]
+}
